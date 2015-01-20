@@ -1,0 +1,23 @@
+HHVM
+====
+time hhvm --count=1000 /var/www/benchmarksphp7hhvm/wordpress/index.php > /dev/null
+11.48s user 0.72s system 93% cpu 13.001 total
+
+PHP 7
+=====
+
+Without Opcache
+---------------
+time sapi/cgi/php-cgi -T 1000 /var/www/benchmarksphp7hhvm/wordpress/index.php > /dev/null
+60.36s user 1.47s system 98% cpu 1:03.06 total
+
+With Opcache
+------------
+time sapi/cgi/php-cgi -T 1000 /var/www/benchmarksphp7hhvm/wordpress/index.php > /dev/null
+8.13s user 0.30s system 91% cpu 9.165 total
+
+PHP 5.6
+=======
+
+time php-cgi -T 1000 /var/www/benchmarksphp7hhvm/wordpress/index.php > /dev/null
+23.93s user 0.45s system 95% cpu 25.648 total

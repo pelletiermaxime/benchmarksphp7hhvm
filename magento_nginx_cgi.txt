@@ -1,0 +1,261 @@
+siege -b -c 1 -r 100 http://hhvmwordpressbenchmarks/
+====================================================
+
+HHVM
+----
+
+Transactions:                    100 hits
+Availability:                 100.00 %
+Elapsed time:                   3.35 secs
+Data transferred:               0.37 MB
+Response time:                  0.03 secs
+Transaction rate:              29.85 trans/sec
+Throughput:                     0.11 MB/sec
+Concurrency:                    0.99
+Successful transactions:         100
+Failed transactions:               0
+Longest transaction:            0.05
+Shortest transaction:           0.02
+
+PHP-5.6
+-------
+
+Transactions:                    100 hits
+Availability:                 100.00 %
+Elapsed time:                   6.43 secs
+Data transferred:               0.39 MB
+Response time:                  0.06 secs
+Transaction rate:              15.55 trans/sec
+Throughput:                     0.06 MB/sec
+Concurrency:                    0.99
+Successful transactions:         100
+Failed transactions:               0
+Longest transaction:            0.09
+Shortest transaction:           0.05
+
+
+PHP-7
+-------
+
+siege -b -c 10 -r 300 http://hhvmwordpressbenchmarks
+====================================================
+
+HHVM
+----
+
+Transactions:                   3000 hits
+Availability:                 100.00 %
+Elapsed time:                  23.23 secs
+Data transferred:              11.14 MB
+Response time:                  0.08 secs
+Transaction rate:             129.14 trans/sec
+Throughput:                     0.48 MB/sec
+Concurrency:                    9.93
+Successful transactions:        3000
+Failed transactions:               0
+Longest transaction:            0.14
+Shortest transaction:           0.03
+
+
+PHP-5.6
+-------
+
+Transactions:                   3000 hits
+Availability:                 100.00 %
+Elapsed time:                  46.13 secs
+Data transferred:              11.60 MB
+Response time:                  0.15 secs
+Transaction rate:              65.03 trans/sec
+Throughput:                     0.25 MB/sec
+Concurrency:                    9.95
+Successful transactions:        3000
+Failed transactions:               0
+Longest transaction:            0.25
+Shortest transaction:           0.05
+
+
+PHP-7
+-------
+
+siege -b -c 30 -r 300 http://hhvmwordpressbenchmarks
+====================================================
+
+HHVM
+----
+
+Transactions:                   9000 hits
+Availability:                 100.00 %
+Elapsed time:                  70.78 secs
+Data transferred:              33.41 MB
+Response time:                  0.24 secs
+Transaction rate:             127.15 trans/sec
+Throughput:                     0.47 MB/sec
+Concurrency:                   29.92
+Successful transactions:        9000
+Failed transactions:               0
+Longest transaction:            0.34
+Shortest transaction:           0.03
+
+
+PHP-5.6
+-------
+
+Transactions:                   9000 hits
+Availability:                 100.00 %
+Elapsed time:                 139.06 secs
+Data transferred:              34.81 MB
+Response time:                  0.46 secs
+Transaction rate:              64.72 trans/sec
+Throughput:                     0.25 MB/sec
+Concurrency:                   29.93
+Successful transactions:        9000
+Failed transactions:               0
+Longest transaction:            0.58
+Shortest transaction:           0.06
+
+
+PHP-7
+-------
+
+siege -b -c 50 -r 300 http://hhvmwordpressbenchmarks
+====================================================
+
+HHVM
+----
+
+Transactions:                  15000 hits
+Availability:                 100.00 %
+Elapsed time:                 115.72 secs
+Data transferred:              55.68 MB
+Response time:                  0.38 secs
+Transaction rate:             129.62 trans/sec
+Throughput:                     0.48 MB/sec
+Concurrency:                   49.90
+Successful transactions:       15000
+Failed transactions:               0
+Longest transaction:            0.53
+Shortest transaction:           0.06
+
+
+PHP-5.6
+-------
+
+Transactions:                  15000 hits
+Availability:                 100.00 %
+Elapsed time:                 219.55 secs
+Data transferred:              58.02 MB
+Response time:                  0.73 secs
+Transaction rate:              68.32 trans/sec
+Throughput:                     0.26 MB/sec
+Concurrency:                   49.89
+Successful transactions:       15000
+Failed transactions:               0
+Longest transaction:            0.91
+Shortest transaction:           0.13
+
+
+PHP-7
+-------
+
+siege -b -c 100 -r 300 http://hhvmwordpressbenchmarks
+====================================================
+
+HHVM
+----
+
+Transactions:                  30000 hits
+Availability:                 100.00 %
+Elapsed time:                 235.11 secs
+Data transferred:             111.35 MB
+Response time:                  0.78 secs
+Transaction rate:             127.60 trans/sec
+Throughput:                     0.47 MB/sec
+Concurrency:                   99.82
+Successful transactions:       30000
+Failed transactions:               0
+Longest transaction:            0.93
+Shortest transaction:           0.05
+
+
+PHP-5.6
+-------
+
+Transactions:                  10000 hits
+Availability:                 100.00 %
+Elapsed time:                 144.73 secs
+Data transferred:              38.68 MB
+Response time:                  1.44 secs
+Transaction rate:              69.09 trans/sec
+Throughput:                     0.27 MB/sec
+Concurrency:                   99.52
+Successful transactions:       10000
+Failed transactions:               0
+Longest transaction:            1.72
+Shortest transaction:           0.13
+
+
+PHP-7
+-------
+
+siege -b -c 200 -r 300 http://hhvmwordpressbenchmarks
+====================================================
+
+HHVM
+----
+
+Transactions:                  60000 hits
+Availability:                 100.00 %
+Elapsed time:                 466.13 secs
+Data transferred:             222.70 MB
+Response time:                  1.55 secs
+Transaction rate:             128.72 trans/sec
+Throughput:                     0.48 MB/sec
+Concurrency:                  199.65
+Successful transactions:       60000
+Failed transactions:               0
+Longest transaction:            1.97
+Shortest transaction:           0.06
+
+
+PHP-5.6
+-------
+
+Transactions:                  19898 hits
+Availability:                  99.49 %
+Elapsed time:                 294.43 secs
+Data transferred:              76.97 MB
+Response time:                  2.66 secs
+Transaction rate:              67.58 trans/sec
+Throughput:                     0.26 MB/sec
+Concurrency:                  179.63
+Successful transactions:       19898
+Failed transactions:             102
+Longest transaction:           29.91
+Shortest transaction:           0.05
+
+
+PHP-7
+-------
+
+siege -b -c 500 -r 100 http://hhvmwordpressbenchmarks
+====================================================
+
+HHVM
+----
+
+Transactions:                  50000 hits
+Availability:                 100.00 %
+Elapsed time:                 390.97 secs
+Data transferred:             185.59 MB
+Response time:                  3.89 secs
+Transaction rate:             127.89 trans/sec
+Throughput:                     0.47 MB/sec
+Concurrency:                  497.49
+Successful transactions:       50000
+Failed transactions:               0
+Longest transaction:            4.31
+Shortest transaction:           0.07
+
+
+PHP-7
+-------
