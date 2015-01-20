@@ -4,6 +4,8 @@ NEWOLDPHP="http://newphpwordpressbenchmarks"
 FULL_PATH="/var/www/benchmarksphp7hhvm/wordpress"
 WP="./wp-cli.phar"
 
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
 $WP core download --path=$FULL_PATH
 $WP core config --path=$FULL_PATH --dbname=wordpressbenchmarks --dbuser=wordpressbenchmarks
 mysql -e "CREATE DATABASE wordpressbenchmarks"
